@@ -30,7 +30,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={joinClassNames(inter.variable, interTight.variable, sf.variable)}>
+    <head>
+      <title>Telegram Games Accelerator</title>
+      <link rel="icon" href="/logo.png" sizes="any" />
+    </head>
+    <body className={joinClassNames(inter.variable, interTight.variable, sf.variable)}>
         {children}
       </body>
     </html>
