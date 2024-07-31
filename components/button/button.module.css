@@ -21,3 +21,13 @@
     letter-spacing: 0.7765481472015381px;
     text-align: center;
 }
+
+@media (max-width: 767px) {
+    .button {
+        padding: 6px 40px;
+        border-radius: 42px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.5904227495193481px;
+    }
+}

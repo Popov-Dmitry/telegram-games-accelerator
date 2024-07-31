@@ -3,6 +3,7 @@
     align-items: center;
     font-weight: 600;
     text-align: left;
+    white-space: nowrap;
 }
 
 .small {
@@ -15,4 +16,16 @@
     font-size: 55px;
     line-height: 66px;
     gap: 23px;
+}
+
+@media (max-width: 767px) {
+    .small {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .large {
+        font-size: 22px;
+        line-height: 26px;
+    }
 }

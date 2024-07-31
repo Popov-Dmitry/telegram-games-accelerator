@@ -13,35 +13,35 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <div className={styles.block}>
-          <div className={styles.title}>Telegram Games Accelerator</div>
+          <div className={styles.name}>Telegram Games Accelerator</div>
           <div className={styles.caption}>
             Lead the next wave of Telegram games
           </div>
           <Button text="Apply" href="/" newTab className={styles.mt20} />
           <div className={joinClassNames(styles.grid3, styles.mt74)}>
-            <div className={styles.textSemibold}>
-              Scale your unique<br />
-              game to Telegram’s<br />
-              <div className={styles.centeredFlex}>
-                massive audiences
+            <div className={styles.firstGridBlock}>
+              Scale your unique game to Telegram’s massive
+              {" "}
+              <span className={styles.centeredFlex}>
+                audiences
                 <Image src="./telegram.svg" alt="" width={20} height={20} />
-              </div>
+              </span>
             </div>
-            <div className={styles.textSemibold}>
-              Find a go-to-market<br />
-              strategy & user<br />
-              <div className={styles.centeredFlex}>
-                acquisition solution
+            <div className={styles.firstGridBlock}>
+              Find a go-to-market strategy & user acquisition
+              {" "}
+              <span className={styles.centeredFlex}>
+                solution
                 <Image src="./megaphone.svg" alt="" width={21} height={21} />
-              </div>
+              </span>
             </div>
-            <div className={styles.textSemibold}>
-              Get advanced technical<br />
-              support & analytical<br />
-              <div className={styles.centeredFlex}>
+            <div className={styles.firstGridBlock}>
+              Get advanced technical support & analytical
+              {" "}
+              <span className={styles.centeredFlex}>
                 expertise
                 <Image src="./gear-outline.svg" alt="" width={24} height={24} />
-              </div>
+              </span>
             </div>
           </div>
         </div>
@@ -54,39 +54,27 @@ export default function Home() {
                 Telegram native toolset for easy access to a 900M active audience.<br />
                 500+ user-acquisition campaigns.
               </div>
-              <Image
-                src="./icon1.svg"
-                alt=""
-                width={158}
-                height={158}
-                className={styles.bgIcon1}
-              />
+              <div className={styles.bgIcon1}>
+                <Image src="./icon1.svg" alt="" fill />
+              </div>
             </div>
             <div className={styles.gridBlock18}>
               <div className={styles.subtitle}>Early</div>
               <div className={styles.text}>
                 A tool for win-win collaborations between projects and their early adopters
               </div>
-              <Image
-                src="./icon2.svg"
-                alt=""
-                width={318}
-                height={68}
-                className={styles.bgIcon2}
-              />
+              <div className={styles.bgIcon2}>
+                <Image src="./icon2.svg" alt="" fill />
+              </div>
             </div>
             <div className={styles.gridBlock18}>
               <div className={styles.subtitle}>Tonstarter</div>
               <div className={styles.text}>
                 The launchpad platform designed to support projects on The Open Network (TON)
               </div>
-              <Image
-                src="./icon3.svg"
-                alt=""
-                width={174}
-                height={155}
-                className={styles.bgIcon3}
-              />
+              <div className={styles.bgIcon3}>
+                <Image src="./icon3.svg" alt="" fill />
+              </div>
             </div>
             <div className={styles.gridBlock18}>
               <div className={styles.subtitle}>TokenTable</div>
@@ -95,27 +83,19 @@ export default function Home() {
                 that allows to conduct airdrops, vesting<br />
                 and unlocking
               </div>
-              <Image
-                src="./icon4.svg"
-                alt=""
-                width={151}
-                height={155}
-                className={styles.bgIcon4}
-              />
+              <div className={styles.bgIcon4}>
+                <Image src="./icon4.svg" alt="" fill />
+              </div>
             </div>
           </div>
-          <div className={joinClassNames(styles.grid2, styles.rowGap30, styles.mt74, styles.relative)}>
+          <div className={joinClassNames(styles.grid2, styles.rowGap30, styles.mt55, styles.relative)}>
             <div>
               <div className={styles.subtitle}>Helika Solution Suite</div>
             </div>
-            <div />
-            <Image
-              src="./helika-icon.svg"
-              alt=""
-              width={273}
-              height={273}
-              className={styles.bgIcon5}
-            />
+            <div className={styles.mobileNone} />
+            <div className={styles.bgIcon5}>
+              <Image src="./helika-icon.svg" alt="" fill />
+            </div>
             <div>
               <div className={styles.textSemibold}>Game Management</div>
               <div className={styles.text}>
@@ -251,25 +231,25 @@ export default function Home() {
         <div className={styles.block}>
           <div className={styles.title}>Initial partners</div>
           <div className={joinClassNames(styles.grid2, styles.colGap100, styles.mt58)}>
-            <div className={styles.gridBlock25}>
+            <div className={joinClassNames(styles.subtitle, styles.mobileTextCenter)}>
               <Image src="./ton-icon.svg" alt="" width={147} height={134} />
               <div>
-                <div className={styles.subtitle}>Notcoin</div>
-                <div className={joinClassNames(styles.text, styles.mt10)}>
+                <div className={joinClassNames(styles.subtitle, styles.mobileTextCenter)}>Notcoin</div>
+                <div className={joinClassNames(styles.text, styles.mobileTextCenter, styles.mt10)}>
                   <span className={joinClassNames(styles.textGreen, styles.textBold)}>40M+</span> users, <span
-                  className={joinClassNames(styles.textGreen, styles.textBold)}>10M+</span> holders,<br />
-                  extensive experience in launching over<br />
-                  <span className={joinClassNames(styles.textGreen, styles.textBold)}>150 campaigns</span> on TON
+                  className={joinClassNames(styles.textGreen, styles.textBold)}>10M+</span> holders,
+                  extensive experience in launching over
+                  <span className={joinClassNames(styles.textGreen, styles.textBold)}> 150 campaigns</span> on TON
                 </div>
               </div>
             </div>
-            <div className={styles.gridBlock25}>
+            <div className={joinClassNames(styles.subtitle, styles.mobileTextCenter)}>
               <Image src="./helika-icon.svg" alt="" width={147} height={134} />
               <div>
-                <div className={styles.subtitle}>Helika</div>
-                <div className={joinClassNames(styles.text, styles.mt10)}>
-                  <span className={joinClassNames(styles.textGreen, styles.textBold)}>15+</span> Years in Web3,<br />
-                  <span className={joinClassNames(styles.textGreen, styles.textBold)}>25</span>+ Years in Gaming, <span
+                <div className={joinClassNames(styles.subtitle, styles.mobileTextCenter)}>Helika</div>
+                <div className={joinClassNames(styles.text, styles.mobileTextCenter, styles.mt10)}>
+                  <span className={joinClassNames(styles.textGreen, styles.textBold)}>15+</span> Years in Web3,
+                  <span className={joinClassNames(styles.textGreen, styles.textBold)}> 25</span>+ Years in Gaming, <span
                   className={joinClassNames(styles.textGreen, styles.textBold)}>10+</span> Years in Venture
                   Funding, <span className={joinClassNames(styles.textGreen, styles.textBold)}>250+</span> Global
                   Industry Connections

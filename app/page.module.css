@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.title {
+.title, .name {
   font-size: 60px;
   font-weight: 600;
   line-height: 72px;
@@ -50,7 +50,7 @@
   z-index: 2;
 }
 
-.text, .textSemibold, .textBold, .textGreen {
+.text, .textSemibold, .textBold, .textGreen, .firstGridBlock {
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
@@ -58,7 +58,7 @@
   z-index: 2;
 }
 
-.textSemibold {
+.textSemibold, .firstGridBlock {
     font-weight: 600;
 }
 
@@ -74,7 +74,7 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  text-align: left;
+  text-align: center;
   color: #C4FF1E;
   margin-top: 4px;
 }
@@ -93,6 +93,10 @@
 
 .mt50 {
   margin-top: 50px;
+}
+
+.mt55 {
+  margin-top: 55px;
 }
 
 .mt58 {
@@ -138,9 +142,13 @@
 }
 
 .centeredFlex {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+}
+
+.firstGridBlock {
+  max-width: 235px;
 }
 
 .gridBlock18, .gridBlock25 {
@@ -165,18 +173,24 @@
   position: absolute;
   top: 5px;
   left: 80px;
+  width: 158px;
+  height: 158px;
 }
 
 .bgIcon2 {
   position: absolute;
   top: 58px;
   left: 37px;
+  width: 318px;
+  height: 68px;
 }
 
 .bgIcon3 {
   position: absolute;
   top: 5px;
   left: 74px;
+  width: 174px;
+  height: 155px;
 }
 
 .bgIcon4 {
@@ -184,6 +198,8 @@
   top: 5px;
   left: 98px;
   opacity: .2;
+  width: 151px;
+  height: 155px;
 }
 
 .bgIcon5 {
@@ -191,6 +207,8 @@
   top: 30px;
   left: 30%;
   opacity: .2;
+  width: 273px;
+  height: 273px;
 }
 
 .relative {
@@ -211,4 +229,133 @@
   line-height: 66px;
   text-align: left;
   color: #C4FF1E;
+}
+
+@media (max-width: 767px) {
+  .headerText {
+    visibility: hidden;
+  }
+
+  .content {
+    gap: 100px;
+    margin: 90px 0 100px 0;
+  }
+
+  .name {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 56px;
+    line-height: 67px;
+    align-self: start;
+  }
+
+  .caption {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 20px;
+  }
+
+  .grid2, .grid3 {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .firstGridBlock {
+    max-width: none;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .subtitle, .subtitleGreen {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .text, .textGreen {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .textSemibold {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+
+  .mt38 {
+    margin-top: 30px;
+  }
+
+  .mt55 {
+    margin-top: 30px;
+  }
+
+  .mAuto {
+    margin-top: 50px;
+  }
+
+  .mobileNone {
+    display: none;
+  }
+
+  .mobileCenter {
+    align-items: center;
+  }
+
+  .mobileTextCenter {
+    text-align: center;
+  }
+
+  .gridLargeBlock {
+    grid-column: span 1;
+  }
+
+  .rowGap50 {
+    grid-row-gap: 20px;
+  }
+
+  .bgIcon1 {
+    top: 5px;
+    left: 0;
+    width: 121px;
+    height: 121px;
+  }
+
+  .bgIcon2 {
+    top: 5px;
+    left: 0;
+    width: 306px;
+    height: 67px;
+  }
+
+  .bgIcon3 {
+    top: 5px;
+    left: 0;
+    width: 106px;
+    height: 94px;
+  }
+
+  .bgIcon4 {
+    top: 5px;
+    left: 0;
+    width: 123px;
+    height: 127px;
+  }
+
+  .bgIcon5 {
+    top: 80px;
+    left: 0;
+    width: 154px;
+    height: 154px;
+  }
+
+  .footerCaption {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
