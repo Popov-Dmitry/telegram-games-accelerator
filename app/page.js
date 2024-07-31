@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div className={styles.mobileNone} />
             <div className={styles.bgIcon5}>
-              <Image src="./helika-icon.svg" alt="" fill />
+              <Image src="./icon5.svg" alt="" fill />
             </div>
             <div>
               <div className={styles.textSemibold}>Game Management</div>
