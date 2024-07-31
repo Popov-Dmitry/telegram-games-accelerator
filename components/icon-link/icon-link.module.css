@@ -1,0 +1,18 @@
+.small, .large {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-align: left;
+}
+
+.small {
+    font-size: 24px;
+    line-height: 29px;
+    gap: 12px;
+}
+
+.large {
+    font-size: 55px;
+    line-height: 66px;
+    gap: 23px;
+}

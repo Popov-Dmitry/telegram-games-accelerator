@@ -1,7 +1,26 @@
-import { Inter } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
+import { joinClassNames } from "@/utils/join-class-names";
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap"
+});
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-inter-tight",
+  weight: ["400", "500", "600"],
+  display: "swap"
+});
+
+const sf = localFont({
+  src: '../SF-Pro-Rounded-Semibold.otf',
+  variable: "--font-sf",
+  display: 'swap',
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +30,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={joinClassNames(inter.variable, interTight.variable, sf.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
